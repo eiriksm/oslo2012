@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Drupalcamp Oslo demo</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Set Apple icons for when prototype is saved to home screen -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
+
+    <link rel="stylesheet" href="app/stylesheets/screen.css">
+
+
+  </head>
+  <body>
+
+  <header class="bar-title">
+    <h1 class="title">Demo</h1>
+  </header>
+
+  <div class="content">
+    <div class="content-padded">
+
+      <form>
+        <input value="title" type="text" id="apptitle" placeholder="Full name" />
+        <textarea id="appbody" rows="5">bodytext</textarea>
+        <a class="button-block" id="clickthis">Send stuff!</a>
+        <a class="button-block" id="login">Login!</a>
+      </form>
+      <input value="http://192.168.42.184" type="text" id="ip" />
+    </div>
+
+  </div>
+
+  </body>
+  <script src="app.js"></script>
+</html>

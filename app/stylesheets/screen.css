@@ -1,0 +1,7 @@
+@import url(../../app.css);
+/* line 3, ../sass/screen.scss */
+nav i {
+  font-size: 2em;
+  height: 20px;
+  line-height: 18px;
+}

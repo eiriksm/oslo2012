@@ -58,6 +58,7 @@ document.getElementById('clickthis').addEventListener('click', function() {
     drupal.method = 'file';
     drupal.image = data;
     drupal.callback = function(data) {
+      alert('lasta opp fil');
       var drupal = new drupalServices();
       drupal.method = 'node';
       drupal.data = {
@@ -77,7 +78,8 @@ document.getElementById('clickthis').addEventListener('click', function() {
       drupal.post();
     }
     drupal.addFile();
-  }, function() {},  { quality: 50 });
+  }, function() {},  { quality: 50,
+    destinationType: Camera.DestinationType.DATA_URL });
 })
 document.getElementById('login').addEventListener('click', function() {
   var drupal = new drupalServices();

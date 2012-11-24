@@ -62,6 +62,7 @@ document.getElementById('clickthis').addEventListener('click', function() {
       drupal.method = 'node';
       drupal.data = {
         'title': 'testing',
+        'type': 'article',
         'field_image': {
           'und': {
             0: {
